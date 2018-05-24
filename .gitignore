@@ -1,0 +1,12 @@
+.vs
+Log
+/bin
+/obj
+JoergIsAGeek.Workshop.IdentityServer4.ResourceServer/bin
+JoergIsAGeek.Workshop.IdentityServer4.ResourceServer/obj
+JoergIsAGeek.Workshop.IdentityServer4.IdentityServer/bin
+JoergIsAGeek.Workshop.IdentityServer4.IdentityServer/obj
+JoergIsAGeek.Workshop.IdentityServer4.ConsumerApp/bin
+JoergIsAGeek.Workshop.IdentityServer4.ConsumerApp/obj
+JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp/bin
+JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp/obj
