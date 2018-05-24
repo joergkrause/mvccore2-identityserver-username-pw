@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AspNetCoreResourceServer.Middleware
+namespace JoergIsAGeek.Workshop.IdentityServer4.ResourceServer.Middleware
 {
   public static class CustomUserMappingExtensions
   {

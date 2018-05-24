@@ -1,4 +1,4 @@
-﻿namespace AspNetCoreResourceServer.Middleware
+﻿namespace JoergIsAGeek.Workshop.IdentityServer4.ResourceServer.Middleware
 {
   public class CustomUser
   {

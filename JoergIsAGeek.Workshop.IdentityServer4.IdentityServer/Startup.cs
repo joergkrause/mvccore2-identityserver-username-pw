@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using QuickstartIdentityServer;
+//using QuickstartIdentityServer;
 using System.Security.Cryptography.X509Certificates;
 using System.IO;
 using Serilog;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.StaticConfig;
 
-namespace CustomIdentityServer4
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer
 {
     public class Startup
     {
@@ -18,10 +19,9 @@ namespace CustomIdentityServer4
         {
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
-                .Enrich.WithProperty("App", "CustomIdentityServer4")
+                .Enrich.WithProperty("App", "JoergIsAGeek.Workshop.IdentityServer4.IdentityServer")
                 .Enrich.FromLogContext()
-               // .WriteTo.Seq("http://localhost:5341")
-                .WriteTo.File("../Log/CustomIdentityServer4")
+                .WriteTo.File("../Log/JoergIsAGeek.Workshop.IdentityServer4.IdentityServer")
                 .CreateLogger();
 
             var builder = new ConfigurationBuilder()

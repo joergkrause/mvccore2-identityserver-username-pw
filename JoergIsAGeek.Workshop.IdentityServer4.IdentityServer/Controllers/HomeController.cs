@@ -1,10 +1,10 @@
-﻿using CustomIdentityServer4.Filters;
+﻿using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Filters;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using CustomIdentityServer4.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Models;
 
-namespace CustomIdentityServer4.Controllers
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Controllers
 {
     [SecurityHeaders]
     public class HomeController : Controller

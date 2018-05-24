@@ -1,26 +1,23 @@
-using AspNetCoreResourceServer.Model;
-using AspNetCoreResourceServer.Repositories;
+using JoergIsAGeek.Workshop.IdentityServer4.ResourceServer.Middleware;
+using JoergIsAGeek.Workshop.IdentityServer4.ResourceServer.Model;
+using JoergIsAGeek.Workshop.IdentityServer4.ResourceServer.Repositories;
+using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using System.IO;
-using Microsoft.AspNetCore.Authorization;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.AspNetCore.Mvc.Authorization;
-using Microsoft.EntityFrameworkCore;
-using System.IdentityModel.Tokens.Jwt;
 using Newtonsoft.Json.Serialization;
-using IdentityServer4.AccessTokenValidation;
-using System.Collections.Generic;
 using Serilog;
-using AspNetCoreResourceServer.Middleware;
-using Microsoft.AspNetCore.Http;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
-namespace AspNetCoreResourceServer
+namespace JoergIsAGeek.Workshop.IdentityServer4.ResourceServer
 {
   public class Startup
   {
@@ -32,28 +29,23 @@ namespace AspNetCoreResourceServer
     {
       Log.Logger = new LoggerConfiguration()
           .MinimumLevel.Verbose()
-          .Enrich.WithProperty("App", "AspNetCoreResourceServer")
+          .Enrich.WithProperty("App", "JoergIsAGeek.Workshop.IdentityServer4.ResourceServer")
           .Enrich.FromLogContext()
-          .WriteTo.File("../Log/AspNetCoreResourceServer")
+          .WriteTo.File("../Log/JoergIsAGeek.Workshop.IdentityServer4.ResourceServer")
           .CreateLogger();
 
       _env = env;
       var builder = new ConfigurationBuilder()
            .SetBasePath(env.ContentRootPath)
-          .AddJsonFile("config.json");
+           .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
 
     public void ConfigureServices(IServiceCollection services)
     {
-      var connection = Configuration["Production:SqliteConnectionString"];
-      var folderForKeyStore = Configuration["Production:KeyStoreFolderWhichIsBacked"];
 
       var cert = new X509Certificate2(Path.Combine(_env.ContentRootPath, "damienbodserver.pfx"), "");
 
-      services.AddDbContext<DataEventRecordContext>(options =>
-          options.UseSqlite(connection)
-      );
 
       //Add Cors support to the service
       services.AddCors();
@@ -109,7 +101,7 @@ namespace AspNetCoreResourceServer
         options.SerializerSettings.ContractResolver = new DefaultContractResolver();
       });
 
-      services.AddScoped<IDataEventRecordRepository, DataEventRecordRepository>();
+      services.AddScoped<IDataRepository, DataRepository>();
     }
 
     public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

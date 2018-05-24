@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JoergIsAGeek.Workshop.Ident
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JoergIsAGeek.Workshop.IdentityServer4.IdentityServer", "JoergIsAGeek.Workshop.IdentityServer4.IdentityServer\JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.csproj", "{88FD3314-27CB-4E5D-A7D8-C41C096911A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp", "JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp\JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.csproj", "{8D8DE232-AAEF-4929-BA74-7A41F6BE80DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp", "JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp\JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.csproj", "{8D8DE232-AAEF-4929-BA74-7A41F6BE80DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumer", "Consumer", "{445DEB86-4EE0-49B9-96F7-5B8211AF5DCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{0525B61A-F546-4868-A68C-293D17ECD43B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Federation", "Federation", "{AFDD5984-AE41-45EF-806D-6221023D87B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +42,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D17F3B79-EB21-45B6-8CC0-50CCA664EBDD} = {0525B61A-F546-4868-A68C-293D17ECD43B}
+		{75B4202A-ADD0-4801-A4EC-22F362A35125} = {445DEB86-4EE0-49B9-96F7-5B8211AF5DCE}
+		{88FD3314-27CB-4E5D-A7D8-C41C096911A5} = {AFDD5984-AE41-45EF-806D-6221023D87B4}
+		{8D8DE232-AAEF-4929-BA74-7A41F6BE80DC} = {445DEB86-4EE0-49B9-96F7-5B8211AF5DCE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4EF2D9B-EC83-40AE-9083-A74C8DE769B2}

@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>CustomIdentityServer4</AssemblyName>
+    <AssemblyName>JoergIsAGeek.Workshop.IdentityServer4.IdentityServer</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>IdentityServerWithIdentitySQLite</PackageId>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
@@ -45,4 +45,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
     <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.2.301" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="copy &quot;./node_modules/bootstrap/dist/&quot; &quot;./wwwroot/lib&quot;" />
+  </Target>
 </Project>

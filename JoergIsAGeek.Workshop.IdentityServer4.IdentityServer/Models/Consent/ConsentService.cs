@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System;
 using IdentityServer4;
 
-namespace CustomIdentityServer4.Models
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Models
 {
     public class ConsentService
     {

@@ -1,4 +1,4 @@
-﻿using CustomIdentityServer4.UserServices;
+﻿using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.UserServices;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

@@ -15,12 +15,12 @@ using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
-using CustomIdentityServer4.Filters;
-using CustomIdentityServer4.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Filters;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Models;
 using IdentityServer4;
-using CustomIdentityServer4.UserServices;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.UserServices;
 
-namespace CustomIdentityServer4.Controllers
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Controllers
 {
   /// <summary>
   /// This sample controller implements a typical login/logout/provision workflow for local and external accounts.

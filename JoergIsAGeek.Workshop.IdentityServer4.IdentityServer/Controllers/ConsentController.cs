@@ -2,15 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using CustomIdentityServer4.Filters;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Filters;
 using IdentityServer4.Services;
 using IdentityServer4.Stores;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
-using CustomIdentityServer4.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Models;
 
-namespace CustomIdentityServer4.Controllers
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Controllers
 {
     /// <summary>
     /// This controller processes the consent UI

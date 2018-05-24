@@ -2,7 +2,7 @@
 using System.Linq;
 using System;
 
-namespace CustomIdentityServer4.UserServices
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.UserServices
 {
     public class UserRepository : IUserRepository
     {

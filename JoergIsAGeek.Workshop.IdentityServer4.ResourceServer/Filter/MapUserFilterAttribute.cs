@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AspNetCoreResourceServer.Filter
+namespace JoergIsAGeek.Workshop.IdentityServer4.ResourceServer.Filter
 {
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]

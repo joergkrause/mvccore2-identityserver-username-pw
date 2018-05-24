@@ -6,7 +6,7 @@ using IdentityServer4.Services;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 
-namespace CustomIdentityServer4.UserServices
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.UserServices
 {
     public class CustomProfileService : IProfileService
     {

@@ -2,7 +2,7 @@
 using IdentityModel;
 using System.Threading.Tasks;
 
-namespace CustomIdentityServer4.UserServices
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.UserServices
 {
     public class CustomResourceOwnerPasswordValidator : IResourceOwnerPasswordValidator
     {

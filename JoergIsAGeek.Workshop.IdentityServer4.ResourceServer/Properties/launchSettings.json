@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AspNetCoreResourceServer": {
+    "JoergIsAGeek.Workshop.IdentityServer4.ResourceServer": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

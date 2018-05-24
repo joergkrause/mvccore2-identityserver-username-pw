@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
-namespace AspNetCoreResourceServer
+namespace JoergIsAGeek.Workshop.IdentityServer4.ResourceServer
 {
     public class Program
     {

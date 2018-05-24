@@ -1,4 +1,4 @@
-﻿namespace CustomIdentityServer4.UserServices
+﻿namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.UserServices
 {
     public interface IUserRepository
     {

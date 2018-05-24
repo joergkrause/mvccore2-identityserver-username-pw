@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Http;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CustomIdentityServer4.Models
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Models
 {
   public class AccountService
   {

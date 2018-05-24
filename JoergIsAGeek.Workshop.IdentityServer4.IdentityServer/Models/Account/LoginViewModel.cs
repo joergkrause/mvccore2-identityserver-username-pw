@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CustomIdentityServer4.Models
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer.Models
 {
     public class LoginViewModel : LoginInputModel
     {

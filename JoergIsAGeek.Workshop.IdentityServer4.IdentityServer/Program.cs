@@ -2,7 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CustomIdentityServer4
+namespace JoergIsAGeek.Workshop.IdentityServer4.IdentityServer
 {
     public class Program
     {
