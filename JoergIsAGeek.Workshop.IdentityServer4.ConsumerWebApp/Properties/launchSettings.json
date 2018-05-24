@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "MultipleFederationServices": {
+    "JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

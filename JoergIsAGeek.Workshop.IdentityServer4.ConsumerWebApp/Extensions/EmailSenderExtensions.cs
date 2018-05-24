@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using MultipleFederationServices.Services;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Services;
 
-namespace MultipleFederationServices.Services
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Services
 {
     public static class EmailSenderExtensions
     {

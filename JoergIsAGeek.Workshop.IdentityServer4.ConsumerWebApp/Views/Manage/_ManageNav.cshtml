@@ -1,4 +1,4 @@
-﻿@using MultipleFederationServices.Views.Manage
+﻿@using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Views.Manage
 @inject SignInManager<ApplicationUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace MultipleFederationServices.Views.Manage
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Views.Manage
 {
     public static class ManageNavPages
     {

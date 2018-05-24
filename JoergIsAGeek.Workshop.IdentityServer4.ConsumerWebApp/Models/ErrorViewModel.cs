@@ -1,6 +1,6 @@
 using System;
 
-namespace MultipleFederationServices.Models
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models
 {
     public class ErrorViewModel
     {

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MultipleFederationServices.Data.Migrations
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -125,7 +125,7 @@ namespace MultipleFederationServices.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("MultipleFederationServices.Models.ApplicationUser", b =>
+            modelBuilder.Entity("JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id");
 
@@ -184,7 +184,7 @@ namespace MultipleFederationServices.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("MultipleFederationServices.Models.ApplicationUser")
+                    b.HasOne("JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models.ApplicationUser")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -192,7 +192,7 @@ namespace MultipleFederationServices.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("MultipleFederationServices.Models.ApplicationUser")
+                    b.HasOne("JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models.ApplicationUser")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -205,7 +205,7 @@ namespace MultipleFederationServices.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("MultipleFederationServices.Models.ApplicationUser")
+                    b.HasOne("JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models.ApplicationUser")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

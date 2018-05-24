@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MultipleFederationServices.Services
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Services
 {
     public interface IEmailSender
     {

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace MultipleFederationServices
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp
 {
     public class Program
     {

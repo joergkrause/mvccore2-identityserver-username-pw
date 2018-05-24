@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MultipleFederationServices.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models;
 
-namespace MultipleFederationServices.Controllers
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Controllers
 {
     public class HomeController : Controller
     {

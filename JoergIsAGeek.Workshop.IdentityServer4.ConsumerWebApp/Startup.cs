@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MultipleFederationServices.Data;
-using MultipleFederationServices.Models;
-using MultipleFederationServices.Services;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Data;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Services;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace MultipleFederationServices
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp
 {
   public class Startup
   {

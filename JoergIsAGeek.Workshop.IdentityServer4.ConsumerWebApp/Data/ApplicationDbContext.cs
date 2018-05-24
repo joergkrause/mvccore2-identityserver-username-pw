@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MultipleFederationServices.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models;
 
-namespace MultipleFederationServices.Data
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

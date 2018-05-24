@@ -6,7 +6,7 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleResourceOwnerFlowRefreshToken
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerApp
 {
   public static class IdentityServer4Client
   {

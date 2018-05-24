@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using System.Threading.Tasks;
 
-namespace ConsoleResourceOwnerFlowRefreshToken
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerApp
 {
     public class Program
     {
@@ -27,8 +27,8 @@ namespace ConsoleResourceOwnerFlowRefreshToken
 
             Log.Logger.Information("GOT DATA FROM THE RESOURCE SERVER");
 
-            // Run an loop which gets refreshes the token every 3000 milliseconds
-            await IdentityServer4Client.RunRefreshAsync(response, 3000);
+            // Run an loop which gets refreshes the token every 6000 milliseconds
+            await IdentityServer4Client.RunRefreshAsync(response, 6000);
         }
     }
 }

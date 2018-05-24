@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MultipleFederationServices.Models;
-using MultipleFederationServices.Models.ManageViewModels;
-using MultipleFederationServices.Services;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models.ManageViewModels;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Services;
 
-namespace MultipleFederationServices.Controllers
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]
@@ -522,7 +522,7 @@ namespace MultipleFederationServices.Controllers
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("MultipleFederationServices"),
+                _urlEncoder.Encode("JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

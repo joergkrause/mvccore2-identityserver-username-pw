@@ -4,7 +4,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace ConsoleResourceOwnerFlowRefreshToken
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerApp
 {
     public static class ResourceDataClient
     {

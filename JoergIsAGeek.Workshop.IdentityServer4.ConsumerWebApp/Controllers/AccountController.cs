@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MultipleFederationServices.Models;
-using MultipleFederationServices.Models.AccountViewModels;
-using MultipleFederationServices.Services;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Models.AccountViewModels;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Services;
 
-namespace MultipleFederationServices.Controllers
+namespace JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

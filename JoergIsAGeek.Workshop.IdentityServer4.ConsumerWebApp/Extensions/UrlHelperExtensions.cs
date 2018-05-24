@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MultipleFederationServices.Controllers;
+using JoergIsAGeek.Workshop.IdentityServer4.ConsumerWebApp.Controllers;
 
 namespace Microsoft.AspNetCore.Mvc
 {
