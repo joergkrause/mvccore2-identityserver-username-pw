@@ -49,6 +49,6 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="copy &quot;./node_modules/bootstrap/dist/&quot; &quot;./wwwroot/lib&quot;" />
+    <Exec Command="xcopy $(ProjectDir)node_modules\bootstrap\dist\* $(ProjectDir)wwwroot\lib /Y /s /i&#xD;&#xA;xcopy $(ProjectDir)node_modules\jquery\dist\* $(ProjectDir)wwwroot\lib\js /Y /s /i&#xD;&#xA;xcopy $(ProjectDir)node_modules\jquery-validation\dist\* $(ProjectDir)wwwroot\lib\js /Y /s /i&#xD;&#xA;xcopy $(ProjectDir)node_modules\jquery-validation-unobtrusive\* $(ProjectDir)wwwroot\lib\js /Y" />
   </Target>
 </Project>
